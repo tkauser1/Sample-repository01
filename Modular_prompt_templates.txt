@@ -1,0 +1,12 @@
+
+Summarization Template:
+Summarize the following text: "AI is transforming industries by automating processes and providing insights."
+The summary should include key points, major trends, and any relevant insights.
+
+Question Answering Template:
+Answer the following question based on the provided context: "What is artificial intelligence?"
+Use the following context to generate a response: "Artificial intelligence is the simulation of human intelligence in machines."
+
+Data Analysis Template:
+Analyze the following dataset: "Customer purchase data over the last year."
+Focus on trends, outliers, and any patterns that may be relevant for the analysis.
