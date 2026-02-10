@@ -1,0 +1,14 @@
+name: Publish Docs
+
+on:
+  push:
+    paths:
+      - 'docs/**'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Trigger Pages build
+        run: echo "Docs updated"
