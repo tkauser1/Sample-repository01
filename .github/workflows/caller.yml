@@ -1,0 +1,8 @@
+name: Caller Workflow
+
+on:
+  push:
+
+jobs:
+  call-reusable:
+    uses: ./.github/workflows/reusable-workflow.yml
