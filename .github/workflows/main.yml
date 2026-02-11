@@ -1,0 +1,13 @@
+name: Remove secret from history
+on: workflow_dispatch
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Remove secret
+        run: |
+          git filter-branch --force --index-filter \
+          "git rm --cached --ignore-unmatch config.py" \
+          --prune-empty --tag-name-filter cat -- --all
