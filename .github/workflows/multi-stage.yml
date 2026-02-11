@@ -1,0 +1,30 @@
+name: Multi Stage Testing Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Building the project..."
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - run: echo "Running tests..."
+
+  scan:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - run: echo "Running security scan..."
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: scan
+    steps:
+      - run: echo "Deploying application..."
