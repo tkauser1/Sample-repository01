@@ -3,5 +3,4 @@ trigger
 deploy
 Build
 review
-stage
-
+stage 
