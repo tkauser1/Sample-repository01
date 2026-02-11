@@ -1,1 +1,3 @@
-github_token = "ghp_abcdEFGHijklMNOPqrstUVWXyz1234567890" 
+-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASC
+-----END PRIVATE KEY-----
